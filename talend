@@ -1,0 +1,257 @@
+COMPONENTS 
+Sr. No
+Components
+Use
+1.
+tfileinputdelimited
+to read the data
+2.
+	tfileoutputdelimited  
+	to load the data in another file
+(to overwrite allow in adv setting)
+
+
+3.
+	
+tlogrow  
+	
+to see the output in run view
+
+
+4.
+	
+tDBConnection
+	
+to connect to database
+
+
+5.
+	
+toDBOutput
+	
+to data output
+
+
+6.
+	
+tSampleRow
+	
+to read specific records
+
+
+7.
+	
+tFileList
+	
+to read multiple files
+
+
+8.
+	
+tDBInput
+	
+to input into database
+
+
+9.
+	
+tReplicate  
+(from Orchestration family)
+	
+to copy same data to multiple targets
+
+
+10.
+	
+tFilterRow (Processing family)
+	
+to filter rows by evaluating column conditions
+
+
+11.
+	
+tFilterColumn (Processing family)
+	
+to filter columns
+
+
+12.
+	
+tSortRow
+	
+to sort the rows
+
+
+13.
+	
+tMap
+	
+allows joins, filter rows and columns and multiple things
+System routines present
+
+
+14.
+	
+tAggregateRow
+	
+to perform aggregate functions / similar to SQL group by
+15.
+tContextLoad
+to apply the context
+16.
+tPrejob
+this job must run first
+17.
+tContextdump
+to see the context without having access to the context file
+18.
+tUniquerow
+to remove the duplicate
+19.
+tUnite
+Combine multiple source into single target (but all files must have same schema)
+20.
+tJoin
+To join only 2 components
+21.
+tRowGenerator
+generates rows randomly / dummy data
+22.
+tfileoutputexcel
+23.
+tNormalize
+To normalize the data in file
+24.
+tDenormalize
+To de-normalize the data in file
+25.
+tFileCopy
+To copy a file from one source to target
+26.
+tFileArchive
+To compress the file / folder
+27.
+tFileDelete
+To delete file/folder
+28.
+tFPConnection
+To connect to ftp server
+29.
+tFTPGet
+To get the data from ftp server
+30.
+tFTPClose
+To close the ftp connection
+31.
+tPostjob
+At the end of any job
+32.
+tFTPPut
+33.
+tDBClose
+To close database connection
+34.
+tFileExist
+If a file exist at that place then job should run
+35.
+tMsgBox
+Message pop-up
+36.
+tWaitForFile
+Unless the file is pushed into directory, wait for it and then only the job will start
+37.
+tJava
+Doesn't require any i/p or o/p , can work as independently
+38.
+tJavaRow
+Process the data row by row
+39.
+tJavaFlex
+Combination of tjava and tjavarow
+40.
+tSchemaComplianceCheck
+Checks column from a schema
+41.
+tSendMail
+To send mail
+42.
+tRunJob
+43.
+tFlowToIterate
+Take the main flow and convert it to iteration and keep the data as global variables in the form of key, value pairs.
+Works on records.
+44.
+tIterateToFlow
+Iteration to flow. Works on files.
+45.
+tFixedFlowInput
+Talend component used to generate data within the job itself, without reading from any external source like a database, file, API, or Excel.
+Inline Content” Mode (Single or Multiple Rows) =
+You manually enter rows directly inside the component.
+46.
+tBufferOutput
+Store the data into buffer temporarily
+47.
+tlogCatcher
+To catch the errors.
+No need to connect any connection with any sub-job, it will automatically catch the error and display in log-row .
+Whenever there is error in the job then only this component will trigger.
+Select die on error for every component
+48.
+tStatCatcher
+49.
+tRest
+Send a msg for restful webservice and retrieve response
+50.
+tExtractJsonFields
+To extract Json fields
+51.
+tExtractXmlFields
+To extract Xml fields
+52.
+tParallelize
+To run jobs parallelly / simultaneously
+For one subjob to wait for others, synchronize connection
+53.
+tHDFSConnection
+54.
+tHDFSGet	
+To fetch the data from Hadoop
+55.	
+tExtractRegexFields
+56.
+tExtractDelimitedFields
+57.
+tWarn
+58.
+tDie
+59.	
+tSleep
+60.	
+tPause
+61.	
+tLoop
+62.
+tFlowMeter
+63.	
+tFlowMeterCatcher
+64.	
+tChronoMeterStart
+65.
+tChronoMeterStop
+66.
+tMemorizeRows
+67.
+tDBOutputBulk
+68.
+tDBCommit
+69.	
+tDBRollback
+70.	
+tDBRow
+	
+For writing DML queries
+71.	
+tDBOutputBulkExec
+	
+ 
